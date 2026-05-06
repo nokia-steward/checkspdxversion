@@ -43,12 +43,12 @@ def identify_spdx_json_type(filepath: str) -> str:
 
     # Check for SPDX 3.x
     # SPDX 3.x typically has "specVersion" starting with "3."
-    if isinstance(data, dict) and \
-        '@graph' in data and \
-        'specVersion' in data['@graph'][0]:
-        version = data['@graph'][0]['specVersion']
-        if version.startswith("3."):
-            return f"SPDX {version}"
+    if isinstance(data, dict) and '@graph' in data:
+        for elem in data['@graph']:
+            if 'specVersion' in elem:
+                version = elem['specVersion']
+                if version.startswith("3."):
+                    return f"SPDX {version}"
 
     return f"File '{filepath}' is not an SPDX SBOM"
 
