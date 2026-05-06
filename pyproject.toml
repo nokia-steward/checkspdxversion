@@ -1,0 +1,24 @@
+[project]
+name = "checkspdxversion"
+version = "0.1.0"
+authors = [
+  { name="Marc-Etienne Vargenau", email="marc-etienne.vargenau@nokia.com" },
+]
+description = "Utility checking whether a given file is an SPDX 2 JSON, SPDX 3 JSON, or neither"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/nokia/checkspdxversion"
+Issues = "https://github.com/nokia/checkspdxversion/issues"
+
+[project.scripts]
+checkspdxversion = "checkspdxversion.checkspdxversion:main"
