@@ -1,0 +1,129 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "@id": "_:creationInfo",
+            "type": "CreationInfo",
+            "specVersion": "3.0.1",
+            "createdBy": [
+                "https://spdx.org/spdxdocs/Nokia"
+            ],
+            "createdUsing": [
+                "https://pypi.org/spdxdocs/pypispdx"
+            ],
+            "created": "2026-05-06T17:09:45Z",
+            "comment": "This SBOM was created with Python version 3.14.4"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/spdxdocument",
+            "type": "SpdxDocument",
+            "name": "spdxdocument",
+            "dataLicense": "https://spdx.org/spdxdocs/CC0-1.0",
+            "rootElement": [
+                "https://spdx.org/spdxdocs/software_Sbom"
+            ],
+            "profileConformance": [
+                "core",
+                "software",
+                "simpleLicensing"
+            ],
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/software_Sbom",
+            "type": "software_Sbom",
+            "name": "checkspdxversion-0.1.1",
+            "rootElement": [
+                "https://spdx.org/spdxdocs/checkspdxversion"
+            ],
+            "software_sbomType": [
+                "analyzed"
+            ],
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://pypi.org/spdxdocs/pypispdx",
+            "type": "Tool",
+            "name": "pypispdx - 0.3.1",
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/Nokia",
+            "type": "Organization",
+            "name": "Nokia",
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/pypi",
+            "type": "Organization",
+            "name": "pypi.org",
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/checkspdxversion",
+            "type": "software_Package",
+            "name": "checkspdxversion",
+            "software_packageVersion": "0.1.1",
+            "suppliedBy": "https://spdx.org/spdxdocs/pypi",
+            "software_packageUrl": "pkg:pypi/checkspdxversion@0.1.1",
+            "software_downloadLocation": "https://files.pythonhosted.org/packages/54/d3/4765a82f27bb666a853fc83e2fdf2ab2b1cd53c606e05e7812f8c4b4f234/checkspdxversion-0.1.1.tar.gz",
+            "verifiedUsing": [
+                {
+                    "type": "Hash",
+                    "algorithm": "sha256",
+                    "hashValue": "56394b607aed0e65854ddafc56bbf6a20c98362a260b60c074af7736b735fd66"
+                },
+                {
+                    "type": "Hash",
+                    "algorithm": "md5",
+                    "hashValue": "d541ef9c58717c9c69445a77a19c6d6b"
+                }
+            ],
+            "creationInfo": "_:creationInfo",
+            "software_copyrightText": "NOASSERTION"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/LicenseExpression-checkspdxversion",
+            "type": "simplelicensing_LicenseExpression",
+            "simplelicensing_licenseExpression": "Apache-2.0",
+            "simplelicensing_licenseListVersion": "3.28.0",
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/relationshipconcluded-checkspdxversion",
+            "type": "Relationship",
+            "relationshipType": "hasConcludedLicense",
+            "from": "https://spdx.org/spdxdocs/checkspdxversion",
+            "to": [
+                "https://spdx.org/spdxdocs/LicenseExpression-checkspdxversion"
+            ],
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/relationshipdeclared-checkspdxversion",
+            "type": "Relationship",
+            "relationshipType": "hasDeclaredLicense",
+            "from": "https://spdx.org/spdxdocs/checkspdxversion",
+            "to": [
+                "https://spdx.org/spdxdocs/LicenseExpression-checkspdxversion"
+            ],
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://spdx.org/spdxdocs/CC0-1.0",
+            "type": "simplelicensing_LicenseExpression",
+            "simplelicensing_licenseExpression": "CC0-1.0",
+            "creationInfo": "_:creationInfo"
+        },
+        {
+            "spdxId": "https://pypi.org/describes",
+            "type": "Relationship",
+            "relationshipType": "describes",
+            "from": "https://spdx.org/spdxdocs/spdxdocument",
+            "to": [
+                "https://spdx.org/spdxdocs/checkspdxversion"
+            ],
+            "creationInfo": "_:creationInfo"
+        }
+    ]
+}
