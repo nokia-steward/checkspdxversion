@@ -1,0 +1,53 @@
+{
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "creationInfo": {
+        "created": "2026-09-24T13:12:15Z",
+        "creators": [
+            "Organization: Nokia",
+            "Tool: pypispdx - 0.3.2"
+        ],
+        "licenseListVersion": "3.28",
+        "comment": "CISA SBOM type: Analyzed\nThis SBOM was created with Python version 3.13.15"
+    },
+    "dataLicense": "CC0-1.0",
+    "name": "checkspdxversion-0.1.2",
+    "spdxVersion": "SPDX-2.3",
+    "documentNamespace": "https://pypi.org/spdx/checkspdxversion-0.1.2",
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-checkspdxversion",
+            "checksums": [
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "bd6683f865674b11f79f815964789adcf9eca0106b3f9651f8d11e1707e94282"
+                },
+                {
+                    "algorithm": "MD5",
+                    "checksumValue": "8406e23d241b34ef409ff652d0b19b0e"
+                }
+            ],
+            "copyrightText": "NOASSERTION",
+            "downloadLocation": "https://files.pythonhosted.org/packages/53/96/c807d767210b77f059fff256f7e31895d540f99004ae8ea382ce9ad39629/checkspdxversion-0.1.2.tar.gz",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:pypi/checkspdxversion@0.1.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "Apache-2.0",
+            "licenseDeclared": "Apache-2.0",
+            "name": "checkspdxversion",
+            "supplier": "Organization: https://pypi.org",
+            "versionInfo": "0.1.2"
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-checkspdxversion",
+            "relationshipType": "DESCRIBES"
+        }
+    ]
+}
