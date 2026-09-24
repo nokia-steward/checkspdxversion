@@ -1,0 +1,33 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: checkspdxversion-0.1.2
+DocumentNamespace: https://pypi.org/spdx/checkspdxversion-0.1.2
+
+## Creation Information
+
+LicenseListVersion: 3.28
+Creator: Organization: Nokia
+Creator: Tool: pypispdx - 0.3.2
+Created: 2026-09-24T13:12:05Z
+CreatorComment: <text>CISA SBOM type: Analyzed
+This SBOM was created with Python version 3.13.15</text>
+
+##### Package: checkspdxversion
+
+PackageName: checkspdxversion
+SPDXID: SPDXRef-checkspdxversion
+PackageVersion: 0.1.2
+PackageSupplier: Organization: https://pypi.org
+PackageDownloadLocation: https://files.pythonhosted.org/packages/53/96/c807d767210b77f059fff256f7e31895d540f99004ae8ea382ce9ad39629/checkspdxversion-0.1.2.tar.gz
+FilesAnalyzed: false
+PackageChecksum: SHA256: bd6683f865674b11f79f815964789adcf9eca0106b3f9651f8d11e1707e94282
+PackageChecksum: MD5: 8406e23d241b34ef409ff652d0b19b0e
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/checkspdxversion@0.1.2
+
+##### Relationships
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-checkspdxversion
