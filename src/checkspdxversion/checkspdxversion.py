@@ -5,6 +5,8 @@
 # Licensed under the Apache License 2.0
 # SPDX-License-Identifier: Apache-2.0
 
+__version__ = "0.1.2"
+
 """Utility checking whether a given file is an SPDX 2 JSON, SPDX 3 JSON, or neither."""
 
 import json
@@ -53,11 +55,17 @@ def identify_spdx_json_type(filepath: str) -> str:
     return f"File '{filepath}' is not an SPDX SBOM"
 
 def main():
-    """ 
+    """
     Main function checking whether a given file is an SPDX 2 JSON, SPDX 3 JSON, or neither.
-    """ 
+    """
     parser = argparse.ArgumentParser(
         description="Identify if a file is an SPDX 2 JSON, SPDX 3 JSON, or neither."
+    )
+    parser.add_argument(
+        "-v", "--version", # Accepts both -v and --version
+        action="version",
+        version=__version__,
+        help="Show program's version number and exit."
     )
     parser.add_argument(
         "file",
